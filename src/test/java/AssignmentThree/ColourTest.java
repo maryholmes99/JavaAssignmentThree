@@ -38,4 +38,11 @@ class ColourTest {
         Colour COLOUR_TEST_B = new Colour("Red", 0, 0, 255);
         assertTrue(Colour.satisfiesAbilityToAddTogether(COLOUR_TEST_A, COLOUR_TEST_B));
     }
+
+    @Test
+    public void rejectIfColoursCannotBeAddedTogether(){
+        Colour COLOUR_TEST_A = new Colour("Pink", 25, 175, 24);
+        Colour COLOUR_TEST_B = new Colour("Red", 250, 196, 255);
+        assertFalse(Colour.satisfiesAbilityToAddTogether(COLOUR_TEST_A, COLOUR_TEST_B));
+    }
 }
