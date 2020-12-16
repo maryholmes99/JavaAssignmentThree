@@ -28,6 +28,9 @@ public class Colour {
     }
 
     public static boolean satisfiesAbilityToAddTogether(Colour colour_a, Colour colour_b) {
-        return true;
+        return (colour_a.model == colour_b.model) &&
+                ((colour_a.componentOne + colour_b.componentOne) <= 255) &&
+                ((colour_a.componentTwo + colour_b.componentTwo) <= 255) &&
+                ((colour_a.componentThree + colour_b.componentThree) <= 255);
     }
 }
