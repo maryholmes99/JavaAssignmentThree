@@ -21,6 +21,9 @@ public class Colour {
     }
 
     public static boolean satisfiesColoursAreEqual(Colour colour_a, Colour colour_b) {
-        return true;
+        return (colour_a.model == colour_b.model) &&
+                (colour_a.componentOne == colour_b.componentOne) &&
+                (colour_a.componentTwo == colour_b.componentTwo) &&
+                (colour_a.componentThree == colour_b.componentThree);
     }
 }
