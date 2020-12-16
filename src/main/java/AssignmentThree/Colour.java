@@ -14,4 +14,7 @@ public class Colour {
         this.componentThree = c3;
     }
 
+    public static boolean satisfiesRange(Colour colour) {
+        return true;
+    }
 }
