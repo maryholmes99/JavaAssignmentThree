@@ -17,4 +17,11 @@ class ColourTest {
         Colour TEST_COLOUR = new Colour("Pink", 293, 153, 153);
         assertFalse(Colour.satisfiesRange(TEST_COLOUR));
     }
+
+    @Test
+    public void acceptIfColoursAreEqual() {
+        Colour COLOUR_TEST_A = new Colour("Red", 255, 0, 0);
+        Colour COLOUR_TEST_B = new Colour("Red", 255, 0, 0);
+        assertTrue(Colour.satisfiesColoursAreEqual(COLOUR_TEST_A, COLOUR_TEST_B));
+    }
 }
