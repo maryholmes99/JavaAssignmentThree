@@ -12,4 +12,9 @@ class ColourTest {
         assertTrue(Colour.satisfiesRange(TEST_COLOUR));
     }
 
+    @Test
+    public void rejectIfDoesNotSatisfyRange() {
+        Colour TEST_COLOUR = new Colour("Pink", 293, 153, 153);
+        assertFalse(Colour.satisfiesRange(TEST_COLOUR));
+    }
 }
