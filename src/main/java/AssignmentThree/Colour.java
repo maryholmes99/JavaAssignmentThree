@@ -7,4 +7,11 @@ public class Colour {
     private int componentTwo = 0;
     private int componentThree = 0;
 
+    public Colour(String m, int c1, int c2, int c3){
+        model = m;
+        this.componentOne = c1;
+        this.componentTwo = c2;
+        this.componentThree = c3;
+    }
+
 }
