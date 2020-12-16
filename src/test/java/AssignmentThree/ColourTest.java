@@ -31,4 +31,11 @@ class ColourTest {
         Colour COLOUR_TEST_B = new Colour("Red", 255, 0, 0);
         assertFalse(Colour.satisfiesColoursAreEqual(COLOUR_TEST_A, COLOUR_TEST_B));
     }
+
+    @Test
+    public void acceptIfColoursCanBeAddedTogether() {
+        Colour COLOUR_TEST_A = new Colour("Red", 255, 0, 0);
+        Colour COLOUR_TEST_B = new Colour("Red", 0, 0, 255);
+        assertTrue(Colour.satisfiesAbilityToAddTogether(COLOUR_TEST_A, COLOUR_TEST_B));
+    }
 }
