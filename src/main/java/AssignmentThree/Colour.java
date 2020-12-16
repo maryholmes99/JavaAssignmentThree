@@ -19,4 +19,8 @@ public class Colour {
                 (colour.componentTwo >= 0 && colour.componentTwo <=255) &&
                 (colour.componentThree >= 0 && colour.componentThree <=255);
     }
+
+    public static boolean satisfiesColoursAreEqual(Colour colour_a, Colour colour_b) {
+        return true;
+    }
 }
