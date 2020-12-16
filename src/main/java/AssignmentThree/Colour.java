@@ -26,4 +26,8 @@ public class Colour {
                 (colour_a.componentTwo == colour_b.componentTwo) &&
                 (colour_a.componentThree == colour_b.componentThree);
     }
+
+    public static boolean satisfiesAbilityToAddTogether(Colour colour_a, Colour colour_b) {
+        return true;
+    }
 }
