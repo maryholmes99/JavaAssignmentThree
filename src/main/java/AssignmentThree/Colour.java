@@ -15,6 +15,8 @@ public class Colour {
     }
 
     public static boolean satisfiesRange(Colour colour) {
-        return true;
+        return (colour.componentOne >= 0 && colour.componentOne <=255) &&
+                (colour.componentTwo >= 0 && colour.componentTwo <=255) &&
+                (colour.componentThree >= 0 && colour.componentThree <=255);
     }
 }
